@@ -29,10 +29,10 @@ elif answer == "2" :
     print ("this is where we search")
     searchcriteria = raw_input("Enter your search Criteria, name? phone number etc ")
     print searchcriteria
-    temp1 = open("addressbookdata","r")
+    temp1 = open("addressbookdata.csv","r")
     for line in temp1:
         if searchcriteria in line:
-        print line
+            print(line)
 
 
 # USER DID NOT PICK CREATE OR SEARCH 
